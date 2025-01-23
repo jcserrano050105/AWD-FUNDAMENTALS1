@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+  font-family: "Rubik", serif;
     margin: 0;
     padding: 0;
-
     background-color: rgb(0, 0, 0);
     text-align: justify;
 }
@@ -17,8 +16,9 @@ body {
 
 .container {
   text-align: justify;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
 
@@ -97,11 +97,6 @@ h1, h2 {
     text-shadow: 3px 3px 3px #748d84;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
 
 .bucket-item {
     background-color: #000000;
@@ -116,10 +111,12 @@ h1, h2 {
     margin-top: 0;
     text-shadow: none;
     text-align: left;
+    font-family: Arial, sans-serif;
 }
 
 .bucket-item p {
     margin-bottom: 10px;
+    font-family: Arial, sans-serif;
 }
 
 .go-to-top-container {
