@@ -1,11 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Titan+One&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(206, 10, 10, 0.404);
-    text-align: justify;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.title {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.section-divider {
+  border: none;
+  height: 3px;
+  background-color: #ffffff;
+  width: 80%;
+}
+
+
+.main-title {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.description {
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+
+.title h1, .title h2 {
+  color: #ffffff;
 }
 
 header {
@@ -20,7 +59,7 @@ header img {
     width: 150px;
 }
 
-nav {    
+nav {
     padding: 10px 0px 0px 10px;
 }
 
@@ -64,24 +103,45 @@ h1, h2 {
 }
 
 .bucket-item {
-    background-color: #000000;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: #e6e6dd;
+  position: relative;
+  background-color: #222;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bucket-item:hover {
+  transform: scale(1.05);
 }
 
 .bucket-item h2 {
-    margin-top: 0;
-    text-shadow: none;
-    text-align: left;
+  margin: 0;
 }
 
-.bucket-item p {
-    margin-bottom: 10px;
+.demo-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.bucket-item:hover .demo-container {
+  display: block;
+}
+
+.demo-output {
+  margin-top: 10px;
+  color: lightgreen;
+  font-family: monospace;
+}
 .go-to-top-container {
     position: sticky;
     margin-left: 3%;
@@ -120,11 +180,11 @@ h1, h2 {
   }
 
 header {
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  height: 100px; /* Sets a fixed height for the header */
-  background-color: black; /* Example background color */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100px;
+  background-color: black;
 }
 
 header .header-buttons button:hover {
@@ -135,7 +195,7 @@ header .header-buttons button:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  text-decoration: none; /* Removes underline for anchor links */
+  text-decoration: none;
   text-transform: uppercase;
   color: #000;
   cursor: pointer;
@@ -161,7 +221,7 @@ header .header-buttons button:hover {
 }
 
 .animated-button-link {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   margin: 0 10px;
 }
 
@@ -205,15 +265,16 @@ header .header-buttons button:hover {
 
 main {
   position: relative;
-  height: calc(100vh - 140px); /* Adjust height to account for header and footer */
+  height: calc(100vh - 140px);
 }
 
 .text-container {
-    text-align: justify; /* This will justify the text */
-    max-width: 800px; /* Optional: Limit the width for better readability */
-    margin: 0 auto; /* Center the container */
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .text-container h2 {
-    text-align: center; /* Center the heading if desired */
+    text-align: center; 
 }
+

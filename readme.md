@@ -98,7 +98,7 @@ WD-ProjectName
 |     |  └─ css
 |     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|     |  |  └─ jcnamelogo.png
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html
